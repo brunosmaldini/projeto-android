@@ -111,8 +111,8 @@ nav>a:hover{ /* Efeito para passar mouse */
 
 main{
     background-color: white;
-    min-width: 280px; /* Largura minima para celulares */
-    max-width: 800px; /* largura maxima */
+    min-width: 300px; /* Largura minima para celulares */
+    max-width: 1000px; /* largura maxima */
     margin: auto; /* <= usado para centralizar conteudo */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
     padding: 20px;
@@ -133,6 +133,9 @@ main h2{
     background-image: linear-gradient(to right, var(--cor01), transparent); /* transparent usado para ir da cor escolhida ate transparecer */
     text-indent: 8px;
 
+}
+main img{
+    width: 100%;
 }
 .video{
     background-color: var(--cor05);
