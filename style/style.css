@@ -110,7 +110,7 @@ nav>a:hover{ /* Efeito para passar mouse */
 
 main{
     background-color: white;
-    min-width: 350px; /* Largura minima para celulares */
+    min-width: 400px; /* Largura minima para celulares */
     max-width: 800px; /* largura maxima */
     margin: auto; /* <= usado para centralizar conteudo */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
