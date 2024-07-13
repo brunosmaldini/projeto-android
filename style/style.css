@@ -91,7 +91,6 @@ header>p{
 nav{ /* seleciona todo o menu "box" */
     background-color: var(--cor05);
     padding: 10px;
-    min-width: auto;
 }
 
 nav>a{ /* seleciona apenas ''botoes'' do menu */
