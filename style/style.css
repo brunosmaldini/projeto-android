@@ -193,6 +193,7 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+    min-width: 400px;
 }
 footer a{ /* pode tambem fazer "footer>p>a" para informar que sera todo link dentro do paragrafo, usando apenas footer a sem >, quer dizer que todo link que esta dentro do footer mesmo que esteja fora do paragrafo.*/
     font-weight: bolder;
