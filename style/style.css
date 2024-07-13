@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+
+}
+
+:root{
+    --cor00:#c5ebd6;
+    --cor01:#83e1ad;
+    --cor02:#3ddc84;
+    --cor03:#2fa866;
+    --cor04:#1a5c37;
+    --cor05:#063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-android: 'Android', cursive;
+/*um :root é usado para definir variaveis que melhoram a personalização de um site*/
+}
+
+*{
+    margin: 0px;;
+    padding: 0px;
+    /*Dessa forma acima (usando o asterisco *= seletor global ), é retirado toda margem e todo padding de todos os elementos do site*/  
+}
+body{
+    background-color: var(--cor00);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo:after{ /* a= links de todo corpo externo= classe :after = adicionar apos a classe */
+    content: '\1F517'; /* icone */
+}
+
+main p{ /* todo p dentro do main, mesmo que ele esteja dentro do article */
+    margin: 15px 0px 15px 0px;
+    text-align: justify; /* usado para deixar texto alinhado de forma quadrada */
+    text-indent: 25px; /* usado para dar recuo no comeco do texto do paragrafo */
+    line-height: 2em; /* altura da linha */
+    font-size: 1em;
+
+}
+main strong{
+    color: var(--cor04);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+main a{
+    text-decoration: none;
+    font-size: bold;
+    color: var(--cor05);
+    background-color: var(--cor02);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor03);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04), var(--cor05));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+header>h1{
+    color:var(--cor05);
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.521);
+    font-weight: normal; /* retira negrito de titulos */
+}
+
+header>p{
+    color: white;
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.521);
+}
+
+nav{ /* seleciona todo o menu "box" */
+    background-color: var(--cor05);
+    padding: 10px;
+}
+
+nav>a{ /* seleciona apenas ''botoes'' do menu */
+    color: var(--cor01);
+    text-decoration: none; /* retira sunlinhado do link do menu */
+    padding: 10px; /* afastamento de dentro */
+    font-weight: bold;  /* texto negrito */
+    border-radius: 5px; /* arredonda a caixa */
+    transition-duration: 0.5s; /* duração do efeito ao passar mouse */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.11);
+}
+
+nav>a:hover{ /* Efeito para passar mouse */
+    background-color: var(--cor01);
+    color: var(--cor05); 
+}
+
+main{
+    background-color: white;
+    min-width: 300px; /* Largura minima para celulares */
+    max-width: 800px; /* largura maxima */
+    margin: auto; /* <= usado para centralizar conteudo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor05);
+    font-family: var(--fonte-android);
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor04);
+    font-size: 1.3;
+    background-image: linear-gradient(to right, var(--cor01), transparent); /* transparent usado para ir da cor escolhida ate transparecer */
+    text-indent: 8px;
+
+}
+.video{
+    background-color: var(--cor05);
+    margin: 0px -20px 30px -20px; /* o que é a margem negativa? basicamente ela ultrapassara o que eta embaixo dela, fazendo que nao veja onde comeca e termina */
+    padding: 10px;
+    padding-bottom: 59%; /* para retirar a barra preta quando da play no video */
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute; /* para poder usar as configs abaixo */
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.pequena{
+    margin: auto; /* centraliza automaticamente a caixa no centro do navegador */
+    display: block; /* transforma imagem em uma caixa par poder centralizar usando o margin:auto */
+    max-width: 350px; /* o comando diz: o maximo de largura aceito é 350px acima disso nao cresce */
+}
+
+aside{
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.438);
+}
+
+aside h3{
+    background-color:  var(--cor04);
+    padding: 10px;
+    color: white;
+    margin: -10px -10px 0px -10px; /*margin negativa para vasar para fora e parecer tudo mesmo item */
+    border-radius: 10px 10px 0px 0px;/* arredonda apenas bordas decima */
+    font-weight: normal;
+
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0'; /* OBS1: usando para trocar o tipo de icone de lista, lembrar de usar somente numero na hora de copiar e usar a barra invertida \ para aparecer o icone */
+    /* OBS2: Epaço utilizado entre o icone e os numeros, sao usados usando 00A0, como um só nao foi suficiente, foi usado 2x o codigo */
+    /* OBS3: Nãp é todo navegador compativel com esta config */
+
+    list-style-position: inside; /* estilo da lista, outside = fora inside = dentro, se refere as bolinhas */
+    columns: 2;/* usado para informar quantas colunas ira usar, pode por a quantia que quiser */
+}
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a{ /* pode tambem fazer "footer>p>a" para informar que sera todo link dentro do paragrafo, usando apenas footer a sem >, quer dizer que todo link que esta dentro do footer mesmo que esteja fora do paragrafo.*/
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+     text-decoration: underline;
+     color:var(--cor02);
+     position: ;
+}
