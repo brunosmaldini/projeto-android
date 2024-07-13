@@ -110,8 +110,8 @@ nav>a:hover{ /* Efeito para passar mouse */
 
 main{
     background-color: white;
-    min-width: 300px; /* Largura minima para celulares */
-    max-width: 1000px; /* largura maxima */
+    min-width: 400px; /* Largura minima para celulares */
+    max-width: 850px; /* largura maxima */
     margin: auto; /* <= usado para centralizar conteudo */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
     padding: 20px;
@@ -190,9 +190,6 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
-    min-width: 400px;
-    display: block;
-    margin: auto;
 }
 footer a{ /* pode tambem fazer "footer>p>a" para informar que sera todo link dentro do paragrafo, usando apenas footer a sem >, quer dizer que todo link que esta dentro do footer mesmo que esteja fora do paragrafo.*/
     font-weight: bolder;
