@@ -67,7 +67,7 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-    min-width: 450px;
+
 }
 
 header>h1{
@@ -91,6 +91,7 @@ header>p{
 nav{ /* seleciona todo o menu "box" */
     background-color: var(--cor05);
     padding: 10px;
+    min-width: 400px;
 }
 
 nav>a{ /* seleciona apenas ''botoes'' do menu */
