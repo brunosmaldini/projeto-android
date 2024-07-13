@@ -110,7 +110,7 @@ nav>a:hover{ /* Efeito para passar mouse */
 
 main{
     background-color: white;
-    min-width: 300px; /* Largura minima para celulares */
+    min-width: 350px; /* Largura minima para celulares */
     max-width: 800px; /* largura maxima */
     margin: auto; /* <= usado para centralizar conteudo */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
@@ -152,7 +152,7 @@ div.video > iframe{
 .pequena{
     margin: auto; /* centraliza automaticamente a caixa no centro do navegador */
     display: block; /* transforma imagem em uma caixa par poder centralizar usando o margin:auto */
-    max-width: 350px; /* o comando diz: o maximo de largura aceito é 350px acima disso nao cresce */
+    max-width: 300px; /* o comando diz: o maximo de largura aceito é 350px acima disso nao cresce */
 }
 
 aside{
@@ -196,5 +196,4 @@ footer a{ /* pode tambem fazer "footer>p>a" para informar que sera todo link den
 footer a:hover{
      text-decoration: underline;
      color:var(--cor02);
-     position: ;
 }
