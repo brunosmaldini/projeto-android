@@ -67,7 +67,8 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-    
+    display: block;
+    margin: auto;
 }
 
 header>h1{
